@@ -55,7 +55,7 @@ function SignUp() {
   }, [idCorrect, passwordCorrect]);
 
   useEffect(() => {
-    if (localStorage.getItem("token")) navigate("/todos");
+    if (localStorage.getItem("token")) navigate("/todo");
   });
 
   return (

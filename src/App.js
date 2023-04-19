@@ -12,7 +12,7 @@ function App() {
         {/* <Route path="/" component={Home} /> */}
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
-        <Route path="/todos" element={<ToDo />} />
+        <Route path="/todo" element={<ToDo />} />
       </Routes>
       {/* <Route path="*" element={<NotFound />}></Route> */}
     </div>

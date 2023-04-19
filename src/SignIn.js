@@ -37,7 +37,7 @@ function SignIn() {
       .then((res) => {
         if (res.status === 200) {
           localStorage.setItem("token", res.data.access_token);
-          navigate("/todos");
+          navigate("/todo");
         }
       })
       .catch((err) => {
@@ -54,7 +54,7 @@ function SignIn() {
   }, [idCorrect, passwordCorrect]);
 
   useEffect(() => {
-    if (localStorage.getItem("token")) navigate("/todos");
+    if (localStorage.getItem("token")) navigate("/todo");
   });
 
   return (
