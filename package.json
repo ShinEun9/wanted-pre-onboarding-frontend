@@ -26,7 +26,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://ShinEun9.github.io/wanted-pre-onboarding-frontend/",
+  "homepage": "http://ShinEun9.github.io/wanted-pre-onboarding-frontend",
   "eslintConfig": {
     "extends": [
       "react-app",
