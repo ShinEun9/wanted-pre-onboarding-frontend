@@ -29,6 +29,7 @@ function ToDo() {
       )
       .then((res) => {
         if (res.status === 201) {
+          setNewToDoInput("");
           getToDos();
         }
       })
@@ -68,6 +69,7 @@ function ToDo() {
       <StyledMain>
         <Form onSubmit={handleSubmitNewToDo}>
           <StyledInput
+            value={newToDoInput}
             onChange={(event) => setNewToDoInput(event.target.value)}
             inputProps={{
               "data-testid": "new-todo-input",
