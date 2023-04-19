@@ -59,9 +59,6 @@ function SignUp() {
   });
 
   return (
-    //   <input data-testid="email-input" />
-    //   <input data-testid="password-input" />
-    //   <button data-testid="signup-button">회원가입</button>
     <>
       <h1 class="a11y-hidden">회원가입 페이지</h1>
       <Form onSubmit={handleSubmit}>

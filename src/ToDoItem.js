@@ -11,10 +11,6 @@ function ToDoItem({ todo, getToDos }) {
   const [toDoInput, setToDoInput] = useState(todo.todo);
   const [isCompleted, setIsCompleted] = useState(todo.isCompleted);
 
-  useEffect(() => {
-    console.log(isCompleted);
-  }, [isCompleted]);
-
   const handleSubmitButton = async (event, id) => {
     event.preventDefault();
     console.log(toDoInput);
@@ -35,7 +31,6 @@ function ToDoItem({ todo, getToDos }) {
         }
       )
       .then((res) => {
-        console.log(res);
         if (res.status === 200) {
           setEditMode(false);
           getToDos();
@@ -54,7 +49,6 @@ function ToDoItem({ todo, getToDos }) {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
-        console.log(res);
         if (res.status === 204) {
           getToDos();
         }
